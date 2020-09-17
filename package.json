@@ -21,6 +21,7 @@
     "@angular/router": "~8.0.1",
     "bootstrap": "^4.5.2",
     "crypto": "^1.0.1",
+    "express": "^4.17.1",
     "ngx-spinner": "^10.0.1",
     "ngx-toastr": "^10.1.0",
     "rxjs": "~6.4.0",
