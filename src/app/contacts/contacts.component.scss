@@ -1,0 +1,98 @@
+.contactsCountText {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #053ED1;
+}
+
+.tableHeaders {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #B0C6FF;
+}
+
+.customContainer {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.connectionRow {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(5, 62, 209, 0.14);
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.image{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 10px 0 0 0;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #000000;
+}
+
+.emailAddress{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 10px 0 0 0;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #000000;
+}
+
+.phoneNumber{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 10px 0 0 0;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    color: #000000;
+}

@@ -1,0 +1,50 @@
+<div class="p-3">
+    <div class="row">
+        <div class="col-md-12">
+            <span class="contactsCountText">
+                Contacts  ({{connection?.totalItems}})
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-2 p-3">
+    <div class="col-md-4">
+        <span class="tableHeaders">NAME</span>
+    </div>
+    <div class="col-md-4">
+        <span class="tableHeaders">EMAIL ADDRESS</span>
+    </div>
+    <div class="col-md-4">
+        <span class="tableHeaders">PHONE NUMBER</span>
+    </div>
+</div>
+
+<div class="customContainer p-3">
+    <div class="row mt-4 connectionRow" *ngFor="let connection of connection?.connections">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="image" [src]="connection.photos[0].url">
+                </div>
+                <div class="col-md-8">
+                    <span class="name">{{connection.names[0].displayName}}</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4">
+            <span class="emailAddress">{{connection.emailAddresses[0].value}}</span>
+        </div>
+    
+        <div class="col-md-4">
+            <span class="phoneNumber">{{connection.phoneNumbers[0].value}}</span>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4" *ngIf="connection.nextPageToken">
+    <div class="col-md-12 text-center">
+        <button class="btn btn-primary" (click)="fetchContacts()">Load more</button>
+    </div>
+</div>
